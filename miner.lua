@@ -1,22 +1,21 @@
 -- Computercraft script: 
 
--- Mekanism Digital Miner Automator version 2.1 for Minecraft 1.20.1 
--- (or maybe even anything above 1.12.2 with slight edits to the Blocks section) 
+-- Mekanism Digital Miner Automator (Fork) for Minecraft 1.20.1
 -- Original Script by MartiNJ409 - https://github.com/martinjanas
 -- The original script can be found at - https://github.com/martinjanas/DigitalMinerAutomatization
- 
--- This script places & destroys miner, energy block, storage block, chatbox and chunkloader.
--- It can also output miner status to the chat, visible to anyone on servers, can be turned off below in Settings.
--- Also works on AdvancedPeriperals's chunky turtle, so no need for chunkloader.
  
 -- Just place all the required blocks into the turtle.
 -- No need to use chunkloader if you are using chunky turtle, chat box is not mandatory.
 
--- I'm honestly too lazy to write documentation for the edits I made. I will do so eventually, but for now
--- I'm putting this on GitHub purely so that I can use it myself :)
-
 -- edits by hidngem - https://github.com/HidnGemini
 -- This script can be found at https://github.com/HidnGemini/DigitalMinerAutomatization
+
+-- The updated script adds the option to have the miner broadcast its position based on 4 other
+-- GPS host computers. This allows you to set up the miner and forget about it until you see
+-- its chat message! To use it (in its default configuration), place a (configured) digital miner, 
+-- two (configured) quantum entangloporters (configured for power output and item input), a chatbox,
+-- and a bunch of coal. Then (standing at least two blocks away) run the script. Your turtle will go
+-- off in a direction and will alert you when its done and where it is (if you've got a CC GPS system)
  
 -- User Settings Area --
 Settings = {}
