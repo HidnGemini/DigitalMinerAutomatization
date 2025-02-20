@@ -33,9 +33,6 @@ function utils_get_time(seconds)
 end
 
 function utils_go_one_chunk()
-	turtle.turnLeft()
-	turtle.turnLeft()
-	turtle.turnLeft()
 	
 	for j = 1, 16 do
 		turtle.forward()
