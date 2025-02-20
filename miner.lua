@@ -32,7 +32,6 @@ Blocks.BLOCK_CHATBOX = "advancedperipherals:chat_box" -- Edit this only if you a
 -- User Settings Area --
 
 -- Dont touch this if you don't know what you are doing:
-local List = require "lib/list"
 GlobalVars = {}
 GlobalVars.m_pMiner = nil
 GlobalVars.m_pChatBox = nil
@@ -43,10 +42,9 @@ local MOTEM_SLOT = 16
 local MESSAGE_RECIPIENT = 11
 
 -- added refueling
-local STORAGE_SLOTS = List(1,2,3,4,5,6,7,8,9,10,11,12,13)
 local function refuel()
    local slot = turtle.getSelectedSlot()
-   for i in STORAGE_SLOTS() do
+   for i=1,13 do
      local item = turtle.getItemDetail(i)
      if item and item.name:find("coal") then
        turtle.select(i)
